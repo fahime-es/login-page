@@ -26,7 +26,7 @@ body {
   gap: 89.6px; 
 }
 
-/* LEFT CARD */
+
 .left-card {
   width: 540.8px;
   height: 100%;
@@ -50,7 +50,6 @@ body {
   text-align: center;
 }
 
-/* RIGHT CARD */
 .right-card {
   width: 377.6px;
   height: 100%;
@@ -64,7 +63,6 @@ body {
   justify-content: space-between;
 }
 
-/* BRAND */
 .brand {
   font-size: 19.2px; 
   font-weight: 600;
@@ -76,7 +74,6 @@ body {
   margin: 0.8px; 
 }
 
-/* مربع اصلی */
 .logo-shape {
   width: 19.2px; 
   height: 19.2px; 
@@ -86,7 +83,6 @@ body {
   overflow: hidden;
 }
 
-/* نیم‌دایره سمت چپ */
 .logo-shape::before {
   content: "";
   position: absolute;
@@ -97,7 +93,6 @@ body {
   background: #465FF180;
   border-radius: 50%;
 }
-/*نیم‌دایره داخلی (سفید) */
 .logo-shape::after {
   content: "";
   position: absolute;
@@ -110,7 +105,6 @@ body {
 }
 
 
-/* TABS */
 .tabs {
   display: flex;
   background: #ECF0FF;
@@ -133,7 +127,6 @@ body {
   border-radius: 8px;
 }
 
-/* FORM */
 .field {
   margin-bottom: 12.8px; 
 }
@@ -186,7 +179,6 @@ input.success {
   min-height: 9.6px; 
 }
 
-/* PASSWORD RULES */
 .password-rules {
   list-style: none;
   margin-top: 9.6px; 
@@ -215,7 +207,6 @@ input.success {
 }
 
 
-/* BUTTON */
 button {
   width: 100%;
   height: 38.4px; 
@@ -240,7 +231,6 @@ button.enabled {
   display: none;
 }
 
-/* TERMS */
 .terms {
   font-size: 10.4px; 
   color: #6b7280;
@@ -248,7 +238,6 @@ button.enabled {
   margin-top: 19.2px; 
 }
 
-/* RESPONSIVE */
 @media (max-width: 900px) {
   .cards-wrapper {
     flex-direction: column;

@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
 }
 
 body {
@@ -41,10 +41,25 @@ body {
   flex-direction: column;
   justify-content: space-between;
 }
+.left-card h1 {
+  text-align: center;
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 39px;
+}
 
 .left-center {
   text-align: center;
-  margin-top: 24px;
+  margin-top: 30px;
+  font-size: 21px;
 }
 
 .left-bottom {
@@ -81,7 +96,7 @@ body {
 .logo-shape {
   width: 24px;
   height: 24px;
-  background: #ECF0FF;
+  background: #ecf0ff;
   border-radius: 4px;
   position: relative;
   overflow: hidden;
@@ -95,26 +110,25 @@ body {
   top: 0;
   width: 21px;
   height: 24px;
-  background: #465FF180;
+  background: #465ff180;
   border-radius: 50%;
 }
 /*نیم‌دایره داخلی (سفید) */
 .logo-shape::after {
   content: "";
   position: absolute;
-  left: -5px;       /* عقب/جلو */
+  left: -5px; /* عقب/جلو */
   top: 10px;
   width: 9px;
   height: 6px;
-  background: #ECF0FF;
+  background: #ecf0ff;
   border-radius: 50%;
 }
-
 
 /* TABS */
 .tabs {
   display: flex;
-  background: #ECF0FF;
+  background: #ecf0ff;
   border-radius: 10px;
   margin-bottom: 32px;
 }
@@ -128,7 +142,7 @@ body {
 }
 
 .tab.active {
-  background: #465FF1;
+  background: #465ff1;
   color: #ffffff;
   border-radius: 10px;
 }
@@ -153,13 +167,13 @@ input {
 }
 /* حالت عادی */
 input {
-  border: 1.5px solid #465FF166;
+  border: 1.5px solid #465ff166;
   outline: none;
 }
 
 /* وقتی فوکوسه */
 input:focus {
-  border-color: #465FF1;
+  border-color: #465ff1;
 }
 
 /* وقتی خطا داریم */
@@ -172,7 +186,7 @@ input.success {
   border-color: #22c55e;
 }
 input {
-  border: 1.5px solid #465FF1;
+  border: 1.5px solid #465ff1;
   box-shadow: 0 3px 3px rgba(87, 81, 203, 0.06);
 }
 
@@ -182,7 +196,7 @@ input:focus {
 
 input.error {
   border-color: #ef4444;
-  box-shadow: 0 0 0 3px rgba(239,68,68,0.15);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.15);
 }
 
 .password-header {
@@ -194,7 +208,7 @@ input.error {
 .forgot {
   font-size: 12px;
   color: #6b7280;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .error {
@@ -220,7 +234,7 @@ input.error {
 
 .password-rules .check {
   font-size: 12px;
-  color: #ECF0FF;
+  color: #ecf0ff;
 }
 
 .password-rules li.valid {
@@ -231,7 +245,6 @@ input.error {
   color: #22c55e;
 }
 
-
 /* BUTTON */
 button {
   width: 100%;
@@ -239,12 +252,12 @@ button {
   padding: 1px;
   border-radius: 11px;
   border: none;
-  background: #465FF1B2;
+  background: #465ff1b2;
   color: #fff;
 }
 
 button.enabled {
-  background: #465FF1;
+  background: #465ff1;
   cursor: pointer;
 }
 #successMessage {

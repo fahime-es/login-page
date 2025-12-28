@@ -75,6 +75,7 @@ body {
 }
 
 .logo-icon img {
+  background: url("assets/Frame 1000003431(2).png")
   width: 24px;
   height: 24px;
   object-fit: contain;

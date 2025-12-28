@@ -1,6 +1,4 @@
-// =====================
-// Elements
-// =====================
+
 const form = document.getElementById("registerForm");
 
 const usernameInput = document.getElementById("username");
@@ -10,7 +8,6 @@ const passwordInput = document.getElementById("password");
 
 const submitBtn = document.getElementById("submitBtn");
 
-// Password rules
 const strengthItem = document.getElementById("rule-strength");
 const strengthText = strengthItem.querySelector(".text");
 
@@ -18,9 +15,7 @@ const rulePersonal = document.querySelector('[data-rule="personal"]');
 const ruleLength = document.querySelector('[data-rule="length"]');
 const ruleSymbol = document.querySelector('[data-rule="symbol"]');
 
-// =====================
-// State
-// =====================
+
 const touched = {
   username: false,
   fullName: false,
@@ -28,9 +23,7 @@ const touched = {
   password: false
 };
 
-// =====================
-// Helpers
-// =====================
+
 function setError(input, message) {
   const errorEl = input.parentElement.querySelector(".error");
   errorEl.textContent = message;
@@ -45,9 +38,6 @@ function setSuccess(input) {
   input.classList.add("success");
 }
 
-// =====================
-// Field Validations
-// =====================
 function validateUsername() {
   const value = usernameInput.value.trim();
 

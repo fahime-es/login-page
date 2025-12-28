@@ -91,24 +91,19 @@ function validateEmail() {
   return true;
 }
 
-// =====================
-// Password Validation
-// =====================
+
 function validatePassword() {
   const value = passwordInput.value;
   let score = 0;
 
-  // Rule: length
   const hasLength = value.length >= 8;
   ruleLength.classList.toggle("valid", hasLength);
   if (hasLength) score++;
 
-  // Rule: number or symbol
   const hasSymbol = /[0-9!@#$%^&*]/.test(value);
   ruleSymbol.classList.toggle("valid", hasSymbol);
   if (hasSymbol) score++;
 
-  // Rule: personal info
   const namePart = fullNameInput.value
     .trim()
     .split(" ")[0]
@@ -123,7 +118,6 @@ function validatePassword() {
   rulePersonal.classList.toggle("valid", noPersonalInfo);
   if (noPersonalInfo) score++;
 
-  // Strength
   let strength = "Weak";
   if (score === 2) strength = "Medium";
   if (score === 3 && value.length >= 10) strength = "Strong";
@@ -146,9 +140,7 @@ function validatePassword() {
   return true;
 }
 
-// =====================
-// Form State
-// =====================
+
 function updateFormState() {
   const isValid =
     validateUsername() &&
@@ -160,9 +152,7 @@ function updateFormState() {
   submitBtn.classList.toggle("enabled", isValid);
 }
 
-// =====================
-// Input Events
-// =====================
+
 usernameInput.addEventListener("input", () => {
   touched.username = true;
   if (touched.username) validateUsername();
@@ -187,9 +177,6 @@ passwordInput.addEventListener("input", () => {
   updateFormState();
 });
 
-// =====================
-// Submit (REAL)
-// =====================
 const successMessage = document.getElementById("successMessage");
 
 form.addEventListener("submit", (e) => {
@@ -203,21 +190,17 @@ form.addEventListener("submit", (e) => {
 
   if (!isValid) return;
 
-  // ساخت object اطلاعات کاربر
   const userData = {
     username: usernameInput.value.trim(),
     fullName: fullNameInput.value.trim(),
     email: emailInput.value.trim()
   };
 
-  // لاگ console
   console.log("Account created successfully:", userData);
 
-  // نمایش پیام موفقیت داخل صفحه
   successMessage.textContent = "Account created successfully";
   successMessage.style.display = "block";
 
-  // ریست فرم
   form.reset();
   submitBtn.disabled = true;
   submitBtn.classList.remove("enabled");

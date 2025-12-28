@@ -177,7 +177,7 @@ input.success {
 .forgot {
   font-size: 9.6px; 
   color: #6b7280;
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .error {

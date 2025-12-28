@@ -43,6 +43,15 @@ body {
 .left-center {
   text-align: center;
   margin-top: 19.2px; 
+  font-size: 20px;
+
+}
+
+.subtitle {
+     text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+    margin-bottom: 39px;
 }
 
 .left-bottom {

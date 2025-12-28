@@ -54,6 +54,12 @@ body {
     margin-bottom: 39px;
 }
 
+.description {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.6;
+}
+
 .left-bottom {
   text-align: center;
 }

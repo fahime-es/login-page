@@ -114,13 +114,9 @@ body {
   margin-bottom: 25.6px; 
 }
 
-.tab {
-  flex: 1;
-  padding: 8px;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  font-size: 12.8px;
+  .tab-btn:not(.active):hover {
+    background-color: #e8e8e8;
+}
 }
 
 .tab.active {

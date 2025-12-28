@@ -74,13 +74,22 @@ body {
   margin: 0.8px; 
 }
 
-.logo-icon img {
-  background: url("assets/Frame 1000003431(2).png")
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ECF0FF;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
+.logo-icon img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
 
 .tabs {
   display: flex;

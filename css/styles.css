@@ -74,34 +74,10 @@ body {
   margin: 0.8px; 
 }
 
-.logo-shape {
-  width: 19.2px; 
-  height: 19.2px; 
-  background: #ECF0FF;
-  border-radius: 3.2px; 
-  position: relative;
-  overflow: hidden;
-}
-
-.logo-shape::before {
-  content: "";
-  position: absolute;
-  left: -5.6px; 
-  top: 0;
-  width: 16.8px; 
-  height: 19.2px; 
-  background: #465FF180;
-  border-radius: 50%;
-}
-.logo-shape::after {
-  content: "";
-  position: absolute;
-  left: -4px;      
-  top: 8px; 
-  width: 7.2px; 
-  height: 4.8px; 
-  background: #ECF0FF;
-  border-radius: 50%;
+.logo-icon img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
 }
 
 

@@ -143,14 +143,16 @@ body {
   font-size: 12.8px;
 }
 
-.tab.active {
-  background: #465FF1;
-  color: #ffffff;
-  border-radius: 8px;
+.tab-btn.active {
+    background-color: #465FF1;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
 }
 
-.field {
-  margin-bottom: 12.8px; 
+.tab-btn:not(.active):hover {
+    background-color: #e8e8e8;
 }
 
 label {
